@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ludu12/PhotoAlbum/issues"
   },
-  "homepage": "https://github.com/ludu12/PhotoAlbum#readme"
+  "homepage": "https://github.com/ludu12/PhotoAlbum#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "commander": "^2.16.0",
+    "inquirer": "^6.0.0"
+  }
 }
