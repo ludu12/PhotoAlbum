@@ -1,0 +1,19 @@
+{
+  "name": "photoalbum",
+  "version": "1.0.0",
+  "description": "Displays photo ids and titles in an album",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludu12/PhotoAlbum.git"
+  },
+  "author": "ludu12",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ludu12/PhotoAlbum/issues"
+  },
+  "homepage": "https://github.com/ludu12/PhotoAlbum#readme"
+}
