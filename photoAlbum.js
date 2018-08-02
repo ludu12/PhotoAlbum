@@ -1,28 +1,15 @@
 
-class PhotoAlbum{
+// Promise HTTP client
+const axios = require('axios');
 
-    constructor(){
-        this.albumId = -1;
-        this.photos = []; 
-    }
-
-
-}
-
-const query = (albumId) => {
-    // Define search criteria. The search here is case-insensitive and inexact.
-    const search = new RegExp(name, 'i');
-    Contact.find({$or: [{firstname: search }, {lastname: search }]})
-    .exec((err, contact) => {
-      assert.equal(null, err);
-      console.info(contact);
-      console.info(`${contact.length} matches`);
-      db.disconnect();
-    });
+// Get by album querys using ?albumId=#
+const getByAlbumId = (albumId) => {
+    // Return the query result
+    return axios
+        .get(`https://jsonplaceholder.typicode.com/photos?albumId=${albumId}`)
+        .then(res => res.data)
+        .catch(error => console.log(error));
   };
 
-
-
-
 // Export all methods
-module.exports = { query };
+module.exports = { getByAlbumId };
