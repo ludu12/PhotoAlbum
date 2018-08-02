@@ -8,3 +8,7 @@ $ cd PhotoAlbum
 $ npm install
 $ photo-album --help # To get started
 ```
+To run Unit Tests:
+```
+$ npm test
+```
