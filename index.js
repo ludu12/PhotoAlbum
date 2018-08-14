@@ -1,15 +1,12 @@
 #!/usr/bin/env node
-
-// Command line interfacing library
 const program = require('commander');
-
-// Require photoAlbum.js file and extract functions using JS destructuring assignment
 const { getByAlbumId } = require('./photoAlbum');
+var pjson = require('./package.json');
 
 // Set variables in our program
 program
-  .version('0.0.1')
-  .description('Photo Album Display');
+  .version(pjson.version)
+  .description(pjson.description);
 
 // Define our command
 program
@@ -20,7 +17,6 @@ program
     .then(response => {
           // Print photo album content for each photo
           response.forEach(photo => {
-            // '[ id ] title'
             console.log("[" + photo.id + "] " + photo.title);
           });
         })
